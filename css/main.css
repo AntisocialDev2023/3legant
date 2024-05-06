@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -66,10 +70,33 @@ li {
   margin: 1rem 2rem 1rem 2rem;
 }
 
+/* Collections */
 #collection-holder {
   display: flex;
+  justify-content: center;
 }
 
+#collection-holder div {
+  margin: 1rem;
+}
+
+#collection-holder div img {
+  z-index: -1;
+}
+
+#collection-holder div h2 {
+  padding: 1rem;
+  position: relative;
+  transform: translateY(-7rem);
+}
+
+#collection-holder div:last-child {
+  padding: 1rem;
+  position: relative;
+  transform: translateY(-6rem);
+}
+
+/* Bestseller Section */
 #best-seller {
   display: flex;
   flex-direction: column;
@@ -103,4 +130,18 @@ li {
 /* newsfeed section */
 #newsfeed {
   text-align: center;
+}
+
+/* newsletter section */
+#newsletter {
+  background: rgba(226, 228, 227, 1);
+  padding: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* footer */
+#footer {
+  color: white;
+  background: rgba(20, 23, 24, 1);
 }
