@@ -1,0 +1,106 @@
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+}
+
+#nav-2 {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 171, 0, 0.64);
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+#section-1 {
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: rgba(255, 171, 0, 0.64);
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+#section-1-img {
+  width: 40%;
+}
+
+#section-1-img img {
+  height: 100%;
+}
+
+#section-1-text {
+  width: 55%;
+}
+
+#logos {
+  padding-left: 8rem;
+}
+
+#logos img {
+  margin: 1rem;
+}
+
+#arrivals-holder {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+}
+
+#arrivals-holder div {
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+#collection-holder {
+  display: flex;
+}
+
+#best-seller {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.best-holder {
+  justify-content: center;
+  display: flex;
+}
+
+.best-holder div {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+#promotion {
+  display: flex;
+}
+
+/* Services Section */
+
+#services {
+  display: flex;
+  justify-content: center;
+}
+
+#services div {
+  margin: 2rem;
+}
+
+/* newsfeed section */
+#newsfeed {
+  text-align: center;
+}
