@@ -1,7 +1,10 @@
+/* Desktop View */
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Navbar Section */
 nav {
   display: flex;
   flex-direction: column;
@@ -32,6 +35,8 @@ li {
   margin: 0rem 1rem 0rem 1rem;
 }
 
+/* Hero Section */
+
 #section-1 {
   padding: 2rem 2rem 0rem 2rem;
   background-color: rgba(255, 171, 0, 0.64);
@@ -52,25 +57,43 @@ li {
   width: 55%;
 }
 
+#section-1-text h2 {
+  font-size: 60px;
+}
+
+#section-1-text h2 span {
+  color: blue;
+}
+
+.styled-button {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: 0px solid transparent;
+  border-radius: 10px;
+}
+
 #logos {
-  padding-left: 8rem;
+  padding-left: 5rem;
+  display: flex;
 }
 
 #logos img {
   margin: 1rem;
 }
 
+/* Arrivals Section */
 #arrivals-holder {
-  margin: 0 auto;
   display: flex;
-  width: 90%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 #arrivals-holder div {
   margin: 1rem 2rem 1rem 2rem;
 }
 
-/* Collections */
+/* Collections section*/
 #collection-holder {
   display: flex;
   justify-content: center;
@@ -80,20 +103,11 @@ li {
   margin: 1rem;
 }
 
-#collection-holder div img {
-  z-index: -1;
-}
-
-#collection-holder div h2 {
+#collection-1,
+#collection-2,
+#collection-3 {
+  background: rgba(243, 245, 247, 1);
   padding: 1rem;
-  position: relative;
-  transform: translateY(-7rem);
-}
-
-#collection-holder div:last-child {
-  padding: 1rem;
-  position: relative;
-  transform: translateY(-6rem);
 }
 
 /* Bestseller Section */
@@ -112,8 +126,45 @@ li {
   margin: 1rem 1rem 1rem 1rem;
 }
 
+/* Promotion Section */
+
 #promotion {
   display: flex;
+}
+
+#promotion-aside {
+  background: rgba(255, 171, 0, 0.4);
+  width: 100%;
+  padding: 5rem 0rem 0rem 2rem;
+}
+
+#top-text span {
+  color: blue;
+  font-weight: bold;
+}
+
+#bottom-text {
+  display: flex;
+}
+
+#bottom-text div {
+  margin: 1rem 1rem 1rem 0rem;
+  justify-content: center;
+}
+
+#bottom-text div div {
+  background-color: white;
+  text-align: center;
+}
+
+#bottom-text div div p {
+  font-size: 24px;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#bottom-text div span {
+  text-align: center;
 }
 
 /* Services Section */
@@ -124,7 +175,10 @@ li {
 }
 
 #services div {
+  background: rgba(243, 245, 247, 1);
   margin: 2rem;
+  padding: 3rem;
+  text-align: left;
 }
 
 /* newsfeed section */
@@ -132,16 +186,255 @@ li {
   text-align: center;
 }
 
+#newsfeed div img {
+  margin: 1rem;
+}
+
 /* newsletter section */
 #newsletter {
   background: rgba(226, 228, 227, 1);
-  padding: 2rem;
+  padding: 3rem;
   align-items: center;
   text-align: center;
 }
 
+#newsletter div {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+}
+
+#newsletter div input {
+  align-items: center;
+  background: rgba(226, 228, 227, 1);
+  border: 0px solid transparent;
+}
+
+#newsletter div button {
+  background: none;
+  border: 0px solid transparent;
+}
+
 /* footer */
 #footer {
+  padding: 3rem;
   color: white;
   background: rgba(20, 23, 24, 1);
+}
+
+#footer-1 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+#footer-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer-2 div span {
+  justify-content: center;
+  margin: 1rem;
+}
+
+#footer-2 div img {
+  margin: 1rem;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+  /* Mobile Nav-bar */
+  nav {
+    width: 100%;
+  }
+
+  #nav-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-1 span {
+    margin: 0.5rem;
+    font-size: small;
+  }
+
+  #nav-1 span:nth-child(3) {
+    display: none;
+  }
+
+  #nav-2 ul {
+    display: none;
+  }
+
+  /* Hero section */
+  #section-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem;
+  }
+
+  #section-1-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  #section-1-text h2 {
+    font-size: 30px;
+  }
+
+  #section-1-img {
+    margin: 1rem;
+    padding-left: 4rem;
+  }
+
+  #section-1-img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Logos */
+  #logos {
+    padding: 0rem;
+    display: flex;
+    overflow-x: scroll;
+    margin: 1rem;
+  }
+
+  #logos img {
+    margin: 1rem;
+  }
+
+  /* Arrivals Section */
+  #arrivals h1 {
+    text-align: center;
+  }
+
+  #arrivals-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Collection Section */
+  #collection h1 {
+    text-align: center;
+  }
+
+  #collection-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #collection-1 img,
+  #collection-2 img,
+  #collection-3 img {
+    width: 90%;
+  }
+
+  #collection-2,
+  #collection-3 {
+    width: 85%;
+  }
+
+  #collection-1 {
+    width: 80%;
+  }
+
+  /* Best Seller Section */
+  #best-seller-container h1 {
+    text-align: center;
+  }
+
+  #best-seller {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .best-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .best-holder img {
+    width: 100%;
+  }
+
+  .best-holder div {
+    height: 30rem;
+  }
+
+  /* Promotion Section */
+  #promotion {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #promotion img {
+    width: 100%;
+  }
+
+  #promotion-aside {
+    padding: 2rem 2rem 2rem 2rem;
+    width: 84%;
+  }
+
+  /* Services Section */
+  #services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #services div {
+    width: 40%;
+    padding: 2rem;
+  }
+
+  #services div p {
+    font-weight: bold;
+  }
+
+  /* Footer Section */
+  #footer-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-1 ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-1 ul li {
+    margin: 1rem;
+  }
+
+  #footer-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #footer-2-text {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #footer-2-text span {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
