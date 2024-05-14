@@ -12,6 +12,7 @@
     />
     <title>3legant.</title>
   </head>
+
   <body>
     <!-- Nav bar -->
     <nav>
@@ -239,19 +240,27 @@
           <p>Offer expires in:</p>
           <div id="bottom-text">
             <div>
-              <div><p>02</p></div>
+              <div>
+                <p>02</p>
+              </div>
               <span>Days</span>
             </div>
             <div>
-              <div><p>12</p></div>
+              <div>
+                <p>12</p>
+              </div>
               <span>Hours</span>
             </div>
             <div>
-              <div><p>45</p></div>
+              <div>
+                <p>45</p>
+              </div>
               <span>Minutes</span>
             </div>
             <div>
-              <div><p>05</p></div>
+              <div>
+                <p>05</p>
+              </div>
               <span>seconds</span>
             </div>
           </div>
@@ -308,8 +317,8 @@
       <div id="footer">
         <div id="footer-1">
           <div>
-            <img src="imgs/3legant..svg" alt="" />
-            |
+            <span>3legant</span>
+            <span>|</span>
             <span>Headphone Store</span>
           </div>
           <div>
@@ -338,5 +347,43 @@
         </div>
       </div>
     </div>
+    <!-- JavaScript -->
+    <script>
+      const arrivals = [
+        {
+          key: 1,
+          image: "imgs/arrival 01.jpg",
+          rating: 5,
+          name: "Skullcandy - Crusher anc 2 wireless headphones",
+          price: "$299.99",
+        },
+
+        {
+          key: 2,
+          image: "imgs/arrival 02.jpg",
+          rating: 5,
+          name: "Beats Studio Pro",
+          price: "$349.99",
+        },
+
+        {
+          key: 3,
+          image: "imgs/arrival 03.jpg",
+          rating: 5,
+          name: "Sony - WH - CH720N Wireless Noise Canceling",
+          price: "$349.99",
+        },
+
+        {
+          key: 4,
+          image: "imgs/arrival 04.jpg",
+          rating: 5,
+          name: "Skullcandy - Rail True Wireless Earbuds",
+          price: "$79.99",
+        },
+      ];
+
+      console.log(arrivals);
+    </script>
   </body>
 </html>

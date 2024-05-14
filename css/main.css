@@ -158,8 +158,8 @@ li {
 }
 
 #bottom-text div div p {
-  font-size: 24px;
-  padding: 1rem;
+  font-size: 20px;
+  padding: 0.5rem;
   font-weight: bold;
 }
 
@@ -294,6 +294,7 @@ li {
   #section-1-img {
     margin: 1rem;
     padding-left: 4rem;
+    transform: translateY(32%);
   }
 
   #section-1-img img {
@@ -380,6 +381,7 @@ li {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+    overflow-x: hidden;
   }
 
   #promotion img {
@@ -395,11 +397,18 @@ li {
   #services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 1rem;
   }
 
   #services div {
-    width: 40%;
+    width: 70%;
+    margin: 1rem;
     padding: 2rem;
+    height: 70%;
   }
 
   #services div p {
@@ -412,10 +421,18 @@ li {
     flex-direction: column;
   }
 
+  #footer-1 span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
   #footer-1 ul {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   #footer-1 ul li {
