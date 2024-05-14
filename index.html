@@ -68,43 +68,66 @@
       <!-- New Arrivals Section -->
       <div id="arrivals">
         <h1>New Arrivals</h1>
-        <div id="arrivals-holder">
-          <div>
-            <img src="imgs/arrival 01.png" alt="" />
-            <div>
-              <img src="imgs/rating Group.svg" alt="" />
-              <p>
-                Skullcandy - Crusher anc 2 <br />
-                wireless headphones
-              </p>
-              <p>$299.99</p>
-            </div>
-          </div>
-          <div>
-            <img src="imgs/arrival 02.png" alt="" />
-            <div>
-              <img src="imgs/rating Group.svg" alt="" />
-              <p>Beats Studio Pro</p>
-              <p>$349.99</p>
-            </div>
-          </div>
-          <div>
-            <img src="imgs/arrival 03.png" alt="" />
-            <div>
-              <img src="imgs/rating Group.svg" alt="" />
-              <p>Sony - WH - CH720N Wireless Noise Canceling</p>
-              <p>$349.99</p>
-            </div>
-          </div>
-          <div>
-            <img src="imgs/arrival 04.png" alt="" />
-            <div>
-              <img src="imgs/rating Group.svg" alt="" />
-              <p>Skullcandy - Rail True Wireless Earbuds</p>
-              <p>$79.99</p>
-            </div>
-          </div>
-        </div>
+        <script>
+          const arrivals = [
+            {
+              key: 1,
+              image: "imgs/arrival 01.jpg",
+              rating: 5,
+              name: "Skullcandy - Crusher anc 2 wireless headphones",
+              price: "$299.99",
+            },
+    
+            {
+              key: 2,
+              image: "imgs/arrival 02.jpg",
+              rating: 5,
+              name: "Beats Studio Pro",
+              price: "$349.99",
+            },
+    
+            {
+              key: 3,
+              image: "imgs/arrival 03.jpg",
+              rating: 5,
+              name: "Sony - WH - CH720N Wireless Noise Canceling",
+              price: "$349.99",
+            },
+    
+            {
+              key: 4,
+              image: "imgs/arrival 04.jpg",
+              rating: 5,
+              name: "Skullcandy - Rail True Wireless Earbuds",
+              price: "$79.99",
+            },
+          ];
+
+            let listItems = arrivals.map(x=>
+            `
+           
+            <div>   
+              <img src="./${x.image}" alt="" id="productimg"/>
+              <div>
+                <img src=${x.rating} alt="" id="rating"/>
+                <p id="name">${x.name}</p>
+                <p id="price">${x.price}</p>
+                </div>
+              
+              
+              </div>
+      
+              `)
+          
+              document.getElementById("arrivals").innerHTML = listItems;
+              `
+              <div id="arrivals-holder arrivals">
+                  ${listItems}
+
+                </div>
+              `
+        </script>
+        
       </div>
       <!-- Collections Section -->
       <div id="collection">
@@ -348,42 +371,6 @@
       </div>
     </div>
     <!-- JavaScript -->
-    <script>
-      const arrivals = [
-        {
-          key: 1,
-          image: "imgs/arrival 01.jpg",
-          rating: 5,
-          name: "Skullcandy - Crusher anc 2 wireless headphones",
-          price: "$299.99",
-        },
-
-        {
-          key: 2,
-          image: "imgs/arrival 02.jpg",
-          rating: 5,
-          name: "Beats Studio Pro",
-          price: "$349.99",
-        },
-
-        {
-          key: 3,
-          image: "imgs/arrival 03.jpg",
-          rating: 5,
-          name: "Sony - WH - CH720N Wireless Noise Canceling",
-          price: "$349.99",
-        },
-
-        {
-          key: 4,
-          image: "imgs/arrival 04.jpg",
-          rating: 5,
-          name: "Skullcandy - Rail True Wireless Earbuds",
-          price: "$79.99",
-        },
-      ];
-
-      console.log(arrivals);
-    </script>
+    
   </body>
 </html>
